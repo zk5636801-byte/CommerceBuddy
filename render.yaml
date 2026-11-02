@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: commercebuddy
+    runtime: python
+    buildCommand: ""
+    startCommand: python backend/app.py
+    envVars:
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: CLAUDE_MODEL
+        value: claude-sonnet-5-5
+      - key: MAX_TOKENS
+        value: 700

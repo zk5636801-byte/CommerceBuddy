@@ -1,0 +1,2 @@
+# CommerceBuddy uses Python standard libraries.
+# No external packages are required.

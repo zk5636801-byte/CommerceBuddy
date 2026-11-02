@@ -1,0 +1,14 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CommerceBuddy AI</title><link rel="stylesheet" href="styles.css"></head><body>
+<header><div class="brand"><div class="logo">C</div><div><h1>CommerceBuddy AI</h1><p>Your Personal AI Commerce Professor</p></div></div>
+<div class="status"><span id="mode" class="pill">Checking...</span><span id="mic" class="pill">Mic: ready</span><button id="expo" class="ghost">Exhibition mode</button></div></header>
+<main>
+<section class="stage"><div id="orb" class="orb idle"><i></i><i></i><i></i></div><div id="state" class="state" aria-live="polite">Tap the microphone and ask a question</div>
+<button id="micbtn" class="mic" aria-label="Start voice question">Speak</button>
+<div class="ctrls"><button id="stop" class="stop">Stop speech</button><button id="pause" class="ghost">Pause</button><button id="repeat" class="ghost">Repeat</button><button id="mute" class="ghost">Mute</button><button id="clear" class="ghost">Clear</button></div>
+<div class="ctrls"><select id="mode2" aria-label="Answer style"><option value="quick">Quick answer</option><option value="detailed">Detailed explanation</option><option value="exam">Exam preparation</option></select>
+<select id="voice" aria-label="Voice"></select><label class="rate">Speed <input id="rate" type="range" min="0.6" max="1.3" step="0.1" value="0.95"></label></div>
+<div id="tips" class="tips"></div></section>
+<section class="chat"><div id="subjects" class="subjects"></div><div id="log" class="log" aria-live="polite"></div>
+<div class="input"><input id="q" maxlength="500" placeholder="Type your commerce question..." autocomplete="off"><button id="send">Ask</button></div></section>
+</main><script src="app.js"></script></body></html>
